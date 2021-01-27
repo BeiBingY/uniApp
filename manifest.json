@@ -1,0 +1,117 @@
+{
+    "name" : "project",
+    "appid" : "__UNI__7ADE3CD",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Payment" : {},
+            "Push" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ]
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "payment" : {
+                    "appleiap" : {},
+                    "alipay" : {}
+                },
+                "ad" : {},
+                "push" : {}
+            }
+        },
+        "nativePlugins" : {
+            "DCloud-RichAlert" : {
+                "__plugin_info__" : {
+                    "name" : "原生增强提示框插件",
+                    "description" : "增强的原生提示框。可自定义颜色、按钮数量、放置超链接和checkbox。可覆盖页面中的原生组件",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=36",
+                    "android_package_name" : "uni.UNI7ADE3CD",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "36",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx74d6bd3005190711",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+        "usingComponents" : true,
+        "permission" : {}
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "appid" : "17767960"
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "练练手",
+        "uniStatistics" : {
+            "enable" : true
+        },
+        "router" : {
+            "mode" : "history"
+        }
+    }
+}

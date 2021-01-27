@@ -1,0 +1,244 @@
+{
+	"pages": [ //页面配置，pages数组中第一项表示应用启动页
+		{
+			// 页面路径
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/websocket/websocket",
+			"style": {
+				"navigationBarTitleText": "",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/member/member",
+			"style": {
+				"navigationBarTitleText": "会员中心",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			"path": "pages/city/city",
+			"style": {
+				"navigationBarTitleText": "城市选择",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "列表",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情页",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/user/list",
+			"style": {
+				"navigationBarTitleText": "好友列表",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/chart/chart",
+			"style": {
+				"navigationBarTitleText": "",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		},
+		{
+			// 页面路径
+			"path": "pages/movable/movable",
+			"style": {
+				"navigationBarTitleText": "移动按钮",
+				"h5": { //H5端
+					"titleNView": false //禁用原生头部导航
+				},
+				"app-plus":{ //app端
+					"titleNView": false //禁用原生头部导航
+				}
+			}
+		}
+	],
+	
+	// 设置默认页面的窗口表现
+	"globalStyle": {
+		
+		// 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		"navigationBarTextStyle": "white",
+		
+		// 导航栏标题文字内容
+		"navigationBarTitleText": "演示",
+		
+		// 导航栏背景颜色（同状态栏背景色）
+		"navigationBarBackgroundColor": "#000000",
+		
+		// 下拉显示出来的窗口背景色
+		"backgroundColor": "#eeeeee",
+		
+		// 下拉loading的样式，仅支持dark/light
+		"backgroundTextStyle": "dark",
+		
+		// 是否开启下拉刷新
+		"enablePullDownRefresh": false,
+		
+		// 页面上拉触底事件时距离底部距离，单位只支持px
+		"onReachBottomDistance": 50,
+		
+		// 导航栏样式，仅支持 default/custom. custom即取消默认的原生导航栏
+		"navigationStyle": "default",
+		
+		// 横屏配置，屏幕旋转设置，仅支持 auto/portrait/landscape
+		"pageOrientation": "portrait"
+		
+	},
+	
+	"tabBar":{
+		// tab上的文字默认颜色
+		"color": "#cccccc",
+		
+		// tab上的文字选中时的颜色
+		"selectedColor": "#ff0000",
+		
+		// tab的背景色
+		"backgroundColor": "#ffffff",
+		
+		// 可选bottom、top    top 值仅微信小程序支持
+		"position": "bottom",
+		
+		// tab列表，最少2个，最多5个
+		"list":[
+			{
+				// 页面路径，必须在pages中先定义
+				"pagePath": "pages/index/index",
+				
+				// tab上按钮的文字，在 App 和 H5 平台为非必填。例如中间可放一个没有文字的+号图标
+				"text": "首页",
+				
+				// 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，当 postion 为 top 时，此参数无效，不支持网络图片，不支持字体图标
+				"iconPath": "static/sale.png",
+				// 选中时的图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px ，当 postion 为 top 时，此参数无效
+				"selectedIconPath": "static/saleSelect.png"
+			},
+			{
+				// 页面路径，必须在pages中先定义
+				"pagePath": "pages/member/member",
+				
+				
+				// 条件编译，用特殊的注释作为标记，在编译时根据这些特殊的标记，将注释里面的代码编译到不同平台。
+				// 写法以 #ifdef 或 #ifndef 加 %PLATFORM% 开头，以 #endif 结尾 
+				// #ifdef: if defined 仅在某平台存在,
+				// #ifndef: if not defined 除了某平台均存在,
+				// %PLATFORM%: 平台名称,
+				
+				// APP-PLUS: App,
+				// APP-PLUS-NVUE: App NVUE,
+				// H5: H5,
+				// MP-WEIXIN: 微信小程序,
+				// MP-ALIPAY: 支付宝小程序,
+				// MP-BAIDU: 百度小程序,
+				// MP-TOUTIAO: 字节跳动小程序,
+				// MP-QQ: QQ小程序,
+				// MP: 微信小程序、支付宝小程序、百度小程序、字节跳动小程序、QQ小程序
+				
+				// #ifdef MP
+				
+				// tab上按钮的文字，在 App 和 H5 平台为非必填。例如中间可放一个没有文字的+号图标
+				"text": "我的",
+				// #endif
+				// #ifdef H5 || APP-PLUS
+				"text": "会员中心",
+				// #endif
+				
+				// 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，当 postion 为 top 时，此参数无效，不支持网络图片，不支持字体图标
+				"iconPath": "static/main.png",
+				// 选中时的图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px ，当 postion 为 top 时，此参数无效
+				"selectedIconPath": "static/mainSelect.png"
+			}
+		]
+		
+	}
+}
